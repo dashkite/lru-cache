@@ -20,6 +20,8 @@ class LRUCache
       @cache.delete @keys()[0]
     @cache.set key, value
 
+  delete: ( key ) -> @cache.delete key
+
 memoize = ( f ) ->
   do ( cache = new LRUCache ) ->
     ( input ) ->
