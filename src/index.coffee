@@ -19,8 +19,11 @@ class LRUCache
     else if @cache.size == @max
       @cache.delete @keys()[0]
     @cache.set key, value
+    @
 
   delete: ( key ) -> @cache.delete key
+
+  clear: -> @cache.clear()
 
 memoize = ( f ) ->
   do ( cache = new LRUCache ) ->
