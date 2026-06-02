@@ -1,6 +1,6 @@
 {
   "name": "@dashkite/lru-cache",
-  "version": "0.7.22",
+  "version": "0.7.23",
   "description": "An LRU Cache library for JavaScript",
   "keywords": [
     "lru",
